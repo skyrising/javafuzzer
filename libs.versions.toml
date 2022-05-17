@@ -1,0 +1,13 @@
+[versions]
+asm = "9.2"
+
+[libraries]
+asm-core = { module = "org.ow2.asm:asm", version.ref = "asm" }
+asm-tree = { module = "org.ow2.asm:asm-tree", version.ref = "asm" }
+asm-commons = { module = "org.ow2.asm:asm-commons", version.ref = "asm" }
+jacoco = "org.jacoco:jacoco:0.8.8"
+fastutil = "it.unimi.dsi:fastutil:8.5.8"
+quiltflower = "org.quiltmc:quiltflower:1.9.0"
+
+[bundles]
+asm = ["asm-core", "asm-tree", "asm-commons"]
